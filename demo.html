@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Creation Life Ministries | Demo</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:#100d29;
+  color:white;
+  overflow-x:hidden;
+}
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 7%;background:#fff;color:#24154c;
+  position:sticky;top:0;z-index:10;
+}
+.logo{font-weight:900;letter-spacing:1px}
+.logo span{display:block;font-size:10px;letter-spacing:2px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#24154c;text-decoration:none;font-weight:bold;font-size:13px}
+.hero{
+  min-height:650px;padding:80px 8%;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:40px;flex-wrap:wrap;
+  background:
+  radial-gradient(circle at 75% 45%,#ffbd5970,transparent 25%),
+  radial-gradient(circle at 20% 20%,#a64dff80,transparent 35%),
+  linear-gradient(130deg,#171044,#5425a0,#a52c85);
+}
+.hero-copy{max-width:600px}
+.eyebrow{color:#ffe18b;font-weight:bold;letter-spacing:3px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:20px 0}
+.hero p{font-size:18px;line-height:1.7;color:#f3eaff}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;padding:15px 23px;border-radius:30px;
+  text-decoration:none;font-weight:bold;cursor:pointer;border:0;
+}
+.primary{background:#ffd36c;color:#28154f}
+.secondary{border:2px solid white;color:white;background:transparent}
+.art{
+  width:280px;height:340px;display:grid;place-items:center;
+  margin:auto;position:relative;
+}
+.cross{
+  font-size:180px;color:#fff5c7;
+  text-shadow:0 0 15px #fff,0 0 45px #ffce55,0 0 90px #ff8cdb;
+  animation:glow 3s infinite alternate;
+}
+.orbit{
+  position:absolute;width:280px;height:280px;border:2px solid #ffffff70;
+  border-radius:50%;animation:spin 14s linear infinite;
+}
+.orbit:after{
+  content:"✦";position:absolute;top:20px;left:35px;
+  color:#ffe18b;font-size:30px;
+}
+@keyframes glow{to{filter:brightness(1.5);transform:scale(1.05)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+section{padding:75px 8%}
+.section-title{text-align:center;font-size:36px;margin-bottom:18px}
+.intro{text-align:center;color:#d8cbea;line-height:1.7;max-width:700px;margin:0 auto 35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{
+  background:linear-gradient(145deg,#34256a,#211943);
+  padding:28px;border-radius:22px;border:1px solid #ffffff20;
+  transition:.25s;
+}
+.card:hover{transform:translateY(-7px);border-color:#ffd36c}
+.card .symbol{font-size:38px;margin-bottom:15px}
+.card h3{color:#ffdc87;margin-bottom:10px}
+.card p{color:#e1d9f1;line-height:1.6}
+.light{background:#fff8ed;color:#29184e}
+.light .intro{color:#655875}
+.light .card{background:#fff;border:1px solid #eadcf8;box-shadow:0 8px 25px #34256a12}
+.light .card p{color:#655875}
+.light .card h3{color:#6a35a6}
+footer{text-align:center;padding:35px;color:#ddd0f1;background:#100d29}
+@media(max-width:650px){
+  header{align-items:flex-start;gap:15px;flex-direction:column}
+  nav{gap:12px}
+  .hero{text-align:center;padding-top:60px}
+  .actions{justify-content:center}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    NEW CREATION
+    <span>LIFE CHURCH INTERNATIONAL</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#discover">Discover</a>
+    <a href="#hub">Bible Hub</a>
+    <a href="#kids">Kids' Kingdom</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">WELCOME TO NEW CREATION LIFE MINISTRIES</div>
+    <h1>Discover a Life Filled With Purpose.</h1>
+    <p>Living the life. Manifesting God's power. A place to grow in faith, discover your purpose, and experience a community built on Christ.</p>
+    <div class="actions">
+      <a class="btn primary" href="#connect">Plan Your Visit</a>
+      <a class="btn secondary" href="#discover">Explore Our Church</a>
+    </div>
+  </div>
+  <div class="art" aria-label="Glowing cross illustration">
+    <div class="orbit"></div>
+    <div class="cross">✝</div>
+  </div>
+</section>
+
+<section class="light" id="discover">
+  <h2 class="section-title">A Place to Belong. A Place to Become.</h2>
+  <p class="intro">Discover faith, fellowship, and opportunities to grow together. There is a place for you here.</p>
+  <div class="cards">
+    <article class="card"><div class="symbol">💜</div><h3>Our Mission</h3><p>Discover the heart, vision, and purpose behind our ministry.</p></article>
+    <article class="card"><div class="symbol">🤝</div><h3>Our Community</h3><p>Connect with people growing together in faith and fellowship.</p></article>
+    <article class="card"><div class="symbol">🌟</div><h3>Our Leadership</h3><p>Meet the leaders serving and guiding our church family.</p></article>
+  </div>
+</section>
+
+<section id="hub">
+  <h2 class="section-title">Your Daily Faith Journey</h2>
+  <p class="intro">Take a moment to reflect, learn Scripture, and strengthen your walk with God.</p>
+  <div class="cards">
+    <article class="card"><div class="symbol">📖</div><h3>Daily Inspiration</h3><p id="dailyVerse">“Be strong and of a good courage.” — Joshua 1:9</p></article>
+    <article class="card"><div class="symbol">🧠</div><h3>Bible Challenge</h3><p>Test what you know and discover something new in Scripture.</p><br><button class="btn primary" onclick="startQuiz()">Try a Bible Question</button></article>
+    <article class="card"><div class="symbol">✨</div><h3>Verse Memory</h3><p>Practice remembering meaningful verses one day at a time.</p></article>
+  </div>
+  <p id="quizResult" style="text-align:center;margin-top:25px;color:#ffdc87"></p>
+</section>
+
+<section class="light" id="kids">
+  <h2 class="section-title">Welcome to Kids' Kingdom! 🎨</h2>
+  <p class="intro">A joyful place where children can explore Bible stories, discover faith, and have fun learning.</p>
+  <div class="cards">
+    <article class="card"><div class="symbol">🖍️</div><h3>Color & Create</h3><p>Fun coloring activities inspired by Bible stories.</p></article>
+    <article class="card"><div class="symbol">🎵</div><h3>Sing Along</h3><p>Enjoy songs that help children celebrate faith.</p></article>
+    <article class="card"><div class="symbol">🦁</div><h3>Bible Adventures</h3><p>Explore memorable Bible stories through fun activities.</p></article>
+  </div>
+</section>
+
+<section id="connect">
+  <h2 class="section-title">Let's Connect!</h2>
+  <p class="intro">Whether you're visiting for the first time or already part of our church family, we'd love to connect with you.</p>
+  <div class="cards">
+    <article class="card"><div class="symbol">🙏</div><h3>Prayer & Testimonies</h3><p>Share a prayer request or a story of encouragement.</p></article>
+    <article class="card"><div class="symbol">📅</div><h3>Church Events</h3><p>Discover opportunities to worship, serve, and gather.</p></article>
+    <article class="card"><div class="symbol">📺</div><h3>Watch & Worship</h3><p>Find messages, sermons, and worship videos.</p></article>
+  </div>
+  <div class="actions" style="justify-content:center">
+    <a class="btn primary" href="https://linktr.ee/newcreationlifeministries" target="_blank">Visit Our Links</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  NEW CREATION LIFE MINISTRIES<br>
+  <small>Living The Life, Manifesting God's Power</small><br><br>
+  <small>Interactive website concept demonstration</small>
+</footer>
+
+<script>
+const verses=[
+  "“Be strong and of a good courage.” — Joshua 1:9",
+  "“The Lord is my shepherd; I shall not want.” — Psalm 23:1",
+  "“With God all things are possible.” — Matthew 19:26",
+  "“Walk by faith, not by sight.” — 2 Corinthians 5:7"
+];
+const day=Math.floor(Date.now()/86400000);
+document.getElementById("dailyVerse").textContent=verses[day%verses.length];
+
+function startQuiz(){
+  const answer=prompt("Who built the ark?\nA. Moses\nB. Noah\nC. David");
+  const result=document.getElementById("quizResult");
+  if(answer && answer.trim().toLowerCase()==="b"){
+    result.textContent="Correct! Noah built the ark. Great job! 🎉";
+  }else if(answer){
+    result.textContent="Good try! The answer is Noah. Keep learning! 💜";
+  }
+}
+</script>
+
+</body>
+</html>
