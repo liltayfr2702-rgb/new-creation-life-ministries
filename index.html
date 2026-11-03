@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Creation Life Church International</title>
+<meta name="description" content="Living the Life, Manifesting God's Power. Welcome to New Creation Life Church International.">
+<style>
+:root {
+  --navy:#11143d;
+  --purple:#6842d8;
+  --gold:#e8b94e;
+  --coral:#ff786c;
+  --cream:#fffaf2;
+  --ink:#17172b;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:Arial,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+}
+a {color:inherit;text-decoration:none}
+button {font:inherit;cursor:pointer}
+header {
+  position:sticky;top:0;z-index:20;
+  background:#fff;
+  box-shadow:0 3px 20px #11143d12;
+}
+.nav {
+  max-width:1200px;margin:auto;padding:12px 5%;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand {
+  background:white;border:1px solid #eee;
+  border-radius:12px;padding:8px 13px;
+  color:var(--navy);text-align:center;
+  font-family:Georgia,serif;line-height:1.1;
+}
+.brand strong {display:block;font-size:19px;letter-spacing:2px}
+.brand small {font-size:9px;letter-spacing:1.3px;color:#987323}
+nav {display:flex;gap:22px;align-items:center;font-size:13px;font-weight:bold}
+nav a:hover {color:var(--purple)}
+.menu {display:none;background:var(--navy);color:white;border:0;padding:9px 13px;border-radius:8px}
+.hero {
+  min-height:690px;padding:100px 7%;
+  display:flex;align-items:center;
+  color:white;position:relative;overflow:hidden;
+  background:
+   radial-gradient(circle at 80% 25%,#ff786c99,transparent 30%),
+   radial-gradient(circle at 15% 90%,#e8b94e77,transparent 35%),
+   linear-gradient(125deg,#11143d,#37216d 55%,#6842d8);
+}
+.hero:after {
+ content:"";position:absolute;width:440px;height:440px;
+ border:1px solid #ffffff33;border-radius:50%;
+ right:-100px;bottom:-150px;
+ box-shadow:0 0 0 45px #ffffff09,0 0 0 95px #ffffff07;
+}
+.hero-content {max-width:760px;position:relative;z-index:1}
+.eyebrow {color:#f7d77e;font-weight:bold;letter-spacing:3px;font-size:12px}
+.hero h1 {
+ font-family:Georgia,serif;font-size:clamp(43px,7vw,82px);
+ line-height:1.04;margin:22px 0;
+}
+.hero h1 span {color:#f5cf70}
+.hero p {max-width:590px;color:#eee9ff;font-size:18px}
+.actions {display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn {
+ display:inline-block;border:0;border-radius:30px;
+ padding:14px 24px;font-weight:bold;
+ background:var(--gold);color:var(--navy);
+}
+.btn.alt {background:transparent;border:1px solid #ffffff99;color:white}
+.btn:hover {transform:translateY(-2px);filter:brightness(1.08)}
+section {padding:85px 7%}
+.section-head {max-width:700px;margin:0 auto 38px;text-align:center}
+.section-head h2 {font: bold clamp(30px,4vw,46px) Georgia,serif;color:var(--navy)}
+.section-head p {color:#68677a;margin-top:10px}
+.cards {
+ max-width:1150px;margin:auto;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;
+}
+.card {
+ background:white;padding:28px;border-radius:20px;
+ box-shadow:0 12px 35px #17172b0d;
+ border:1px solid #eeeaf5;
+ transition:.25s;
+}
+.card:hover {transform:translateY(-6px);box-shadow:0 18px 35px #17172b18}
+.card .symbol {font-size:32px}
+.card h3 {color:var(--navy);margin:12px 0 7px}
+.card p {color:#68677a;font-size:14px}
+.card a {display:inline-block;margin-top:16px;color:var(--purple);font-weight:bold}
+.inspiration {
+ background:linear-gradient(120deg,#fff1d4,#f4eaff);
+ text-align:center;
+}
+.verse {
+ max-width:780px;margin:auto;padding:35px;
+ background:white;border-radius:24px;
+ box-shadow:0 15px 45px #6842d822;
+}
+.verse h2 {font: bold 35px Georgia,serif;color:var(--navy)}
+.verse blockquote {font:italic 22px Georgia,serif;margin:22px 0;color:#51406f}
+.verse small {color:#987323;font-weight:bold}
+.interactive {background:#f1efff}
+.quiz {
+ max-width:700px;margin:auto;background:white;padding:30px;
+ border-radius:22px;box-shadow:0 12px 35px #17172b12;
+}
+.quiz h3 {font: bold 26px Georgia,serif;color:var(--navy)}
+.quiz button.option {
+ display:block;width:100%;text-align:left;margin-top:12px;
+ padding:14px;border:1px solid #ddd5f3;border-radius:12px;background:#fff;
+}
+.quiz button.option:hover {border-color:var(--purple);background:#f7f3ff}
+#quiz-result {margin-top:15px;font-weight:bold;color:var(--purple)}
+footer {background:var(--navy);color:white;padding:55px 7%;text-align:center}
+footer p {color:#d4d0e9;margin-top:10px}
+@media(max-width:800px) {
+ .menu {display:block}
+ nav {
+  display:none;position:absolute;top:100%;left:0;width:100%;
+  background:white;padding:20px 7%;flex-direction:column;align-items:flex-start;
+ }
+ nav.open {display:flex}
+ .hero {min-height:600px;padding:85px 7%}
+ section {padding:65px 6%}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="nav">
+  <a href="#" class="brand">
+   <strong>NEW CREATION</strong>
+   <small>LIFE CHURCH INTERNATIONAL</small>
+  </a>
+  <button class="menu" onclick="toggleMenu()">☰ Menu</button>
+  <nav id="navigation">
+   <a href="#home">Home</a>
+   <a href="#about">About</a>
+   <a href="#watch">Watch</a>
+   <a href="#bible">Bible Hub</a>
+   <a href="#ministries">Ministries</a>
+   <a href="#connect">Connect</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="eyebrow">WELCOME TO NEW CREATION</div>
+  <h1>Discover a life<br>filled with <span>purpose.</span></h1>
+  <p>Living the Life, Manifesting God's Power. A place to grow in faith, find community, and discover what God has placed inside you.</p>
+  <div class="actions">
+   <a class="btn" href="#connect">Plan Your Visit</a>
+   <a class="btn alt" href="#watch">Explore Messages ↗</a>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="section-head">
+  <div class="eyebrow">MORE THAN A BUILDING</div>
+  <h2>Faith. Family. Purpose.</h2>
+  <p>Discover our church, our mission, and the people who make this community special.</p>
+ </div>
+ <div class="cards">
+  <article class="card"><div class="symbol">✨</div><h3>Our Mission</h3><p>Sharing the Gospel, building faith, and helping people discover a life with purpose.</p></article>
+  <article class="card"><div class="symbol">🤝</div><h3>Our Community</h3><p>A place to connect, grow together, and serve others.</p></article>
+  <article class="card"><div class="symbol">⛪</div><h3>Our Leadership</h3><p>Meet the leaders and learn more about the heart of our church.</p></article>
+ </div>
+</section>
+
+<section class="inspiration" id="bible">
+ <div class="verse">
+  <div class="eyebrow">A MOMENT IN THE WORD</div>
+  <h2>Daily Inspiration</h2>
+  <blockquote id="daily-message">“Be strong and of a good courage.”</blockquote>
+  <small id="daily-reference">Joshua 1:9 · King James Version</small>
+  <p style="margin-top:18px;color:#68677a">Take a moment. Reflect. Carry today's encouragement with you.</p>
+ </div>
+</section>
+
+<section class="interactive">
+ <div class="section-head">
+  <div class="eyebrow">GROW YOUR FAITH</div>
+  <h2>Test Your Bible Knowledge</h2>
+  <p>Explore Scripture through a fun interactive challenge.</p>
+ </div>
+ <div class="quiz">
+  <h3 id="question">Who built the ark?</h3>
+  <div id="answers">
+   <button class="option" onclick="answerQuiz(0)">Moses</button>
+   <button class="option" onclick="answerQuiz(1)">Noah</button>
+   <button class="option" onclick="answerQuiz(2)">Abraham</button>
+  </div>
+  <div id="quiz-result" aria-live="polite"></div>
+  <button class="btn" style="margin-top:18px" onclick="nextQuestion()">Next Question →</button>
+ </div>
+</section>
+
+<section id="watch">
+ <div class="section-head">
+  <div class="eyebrow">WATCH • LISTEN • GROW</div>
+  <h2>Messages That Inspire</h2>
+  <p>Watch sermons, worship, and messages from New Creation Life Ministries.</p>
+ </div>
+ <div class="cards">
+  <article class="card"><div class="symbol">▶️</div><h3>Watch on YouTube</h3><p>Explore messages and church video content.</p><a href="https://www.youtube.com/@CreatingNewLivesMinistries" target="_blank" rel="noopener">Visit YouTube ↗</a></article>
+  <article class="card"><div class="symbol">🎵</div><h3>Worship & Music</h3><p>Make room for praise, worship, and encouragement.</p></article>
+  <article class="card"><div class="symbol">📺</div><h3>Live Services</h3><p>Join us online when live streaming is available.</p></article>
+ </div>
+</section>
+
+<section id="ministries">
+ <div class="section-head">
+  <div class="eyebrow">FIND YOUR PLACE</div>
+  <h2>There's a Place for You</h2>
+  <p>Discover ways to participate, connect, and grow.</p>
+ </div>
+ <div class="cards">
+  <article class="card"><div class="symbol">👨‍👩‍👧‍👦</div><h3>Kids' Kingdom</h3><p>Bible stories, coloring activities, songs, and learning challenges.</p></article>
+  <article class="card"><div class="symbol">🙏</div><h3>Prayer Wall</h3><p>Share a prayer request and find encouragement through prayer.</p></article>
+  <article class="card"><div class="symbol">💬</div><h3>Share Your Story</h3><p>Share a testimony of faith, hope, and transformation.</p></article>
+  <article class="card"><div class="symbol">📅</div><h3>Church Events</h3><p>Discover gatherings, activities, and opportunities to serve.</p></article>
+ </div>
+</section>
+
+<section id="connect">
+ <div class="section-head">
+  <div class="eyebrow">WE WOULD LOVE TO MEET YOU</div>
+  <h2>Your Next Chapter Starts Here</h2>
+  <p>Connect with New Creation Life Church International and take your next step.</p>
+  <div class="actions" style="justify-content:center">
+   <a class="btn" href="https://linktr.ee/newcreationlifeministries" target="_blank" rel="noopener">Connect With Us</a>
+   <a class="btn" href="https://www.instagram.com/newcreationlife_ministries/" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="brand" style="display:inline-block">
+  <strong>NEW CREATION</strong>
+  <small>LIFE CHURCH INTERNATIONAL</small>
+ </div>
+ <p>Living The Life, Manifesting God's Power.</p>
+ <p style="font-size:12px;margin-top:22px">Website concept by Sylvester Digital Web Force</p>
+</footer>
+
+<script>
+function toggleMenu() {
+ document.getElementById("navigation").classList.toggle("open");
+}
+document.querySelectorAll("#navigation a").forEach(link => {
+ link.addEventListener("click", () => {
+  document.getElementById("navigation").classList.remove("open");
+ });
+});
+
+const messages = [
+ ["“Be strong and of a good courage.”","Joshua 1:9 · King James Version"],
+ ["“I can do all things through Christ which strengtheneth me.”","Philippians 4:13 · King James Version"],
+ ["“The Lord is my shepherd; I shall not want.”","Psalm 23:1 · King James Version"],
+ ["“Trust in the Lord with all thine heart.”","Proverbs 3:5 · King James Version"],
+ ["“With God all things are possible.”","Matthew 19:26 · King James Version"],
+ ["“Let all that you do be done in love.”","1 Corinthians 16:14 · King James Version"]
+];
+const day = Math.floor(Date.now()/86400000)%messages.length;
+document.getElementById("daily-message").textContent=messages[day][0];
+document.getElementById("daily-reference").textContent=messages[day][1];
+
+const questions = [
+ {q:"Who built the ark?",a:["Moses","Noah","Abraham"],correct:1},
+ {q:"Who was swallowed by a great fish?",a:["Jonah","David","Peter"],correct:0},
+ {q:"Where was Jesus born?",a:["Jerusalem","Nazareth","Bethlehem"],correct:2},
+ {q:"Who defeated Goliath?",a:["Solomon","David","Samuel"],correct:1}
+];
+let current=0,answered=false;
+function renderQuestion() {
+ answered=false;
+ document.getElementById("question").textContent=questions[current].q;
+ document.getElementById("quiz-result").textContent="";
+ document.getElementById("answers").innerHTML=questions[current].a.map((a,i)=>
+  `<button class="option" onclick="answerQuiz(${i})">${a}</button>`
+ ).join("");
+}
+function answerQuiz(index) {
+ if(answered)return;
+ answered=true;
+ const correct=questions[current].correct;
+ document.getElementById("quiz-result").textContent=
+  index===correct ? "✓ Correct! Great job!" : "Not quite! The answer is "+questions[current].a[correct]+".";
+}
+function nextQuestion() {
+ current=(current+1)%questions.length;
+ renderQuestion();
+}
+</script>
+</body>
+</html>
